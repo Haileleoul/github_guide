@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Page Title</title>
+
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/e28e0ee020.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/css/styles.css"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <style>
+        /* To strip and make SharePoint page blank - START */
+        #O365_NavHeader,
+        #suitBarTop,
+        #sideNavBox,
+        #s4-titlerow,
+        #titleAreaBox,
+        #s4-ribbonrow,
+        #WebPartWPQ5_ChromeTitle {
+            display: none;
+        }
+
+        div#suiteBarTop.ms-fullWidth {
+            display: none;
+        }
+
+        div#suitBarTop.ms-fullWidth {
+            display: none;
+        }
+
+        #contentBox {
+            margin-left: 20px !important;
+        }
+
+        div#s4-titlerow.ms-dialogHidden {
+            display: none !important;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        /* To strip and make SharePoint page blank - END */
+
+        /* Setting the max-width of the page */
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1600px;
+        }
+
+        #contentRow {
+            padding-top: 0px;
+        }
+
+        /* in progress */
+
+        #contentBox {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        /* Removes white space under footer */
+        #s4-bodyContainer {
+            padding-bottom: 0px !important;
+        }
+
+
+        /* Fotter top and bottom margin  */
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+            margin-top: 1.5rem !important;
+        }
+
+        /* Removes white space under footer */
+        .ms-webpartzone-cell {
+            margin: 0px !important;
+        }
+
+        #House-HR-Hub-Logo {
+            width: 250px;
+            padding-top: 1rem;
+        }
+
+        /* Font style for text on top nav bar and body */
+
+        li,
+        p,
+        h1,
+        button {
+            font-family: Arial;
+            color: white;
+        }
+
+
+        /* Style for footer - START */
+        #footer-logo {
+            width: 175px;
+        }
+
+        #footer-logo-row {
+            text-align: center;
+        }
+
+        #Footer>footer>section>div>div.col-md-12.col-lg-9.col-xl-9.mx-auto.mb-4>p {
+            text-align: center;
+        }
+
+        /* Style for footer - END */
+
+
+        /* Set the width of search button - START */
+        #House-HR-Hub-Logo-Row>div>button {
+            min-width: 0rem;
+        }
+
+        div.input-group {
+            padding-top: 2rem !important;
+            width: 18rem;
+            position: absolute;
+            right: 0;
+            margin: auto;
+        }
+
+        /* Set the width of search button - END */
+
+
+        /* Set the style for search box with max-width 1000px - START */
+        @media all and (max-width: 1000px) {
+
+            #House-HR-Hub-Logo {
+                width: 200px;
+
+            }
+
+            #House-HR-Hub-Logo-Row {
+                text-align: left;
+            }
+
+            #SearchKey {
+                max-width: 10rem;
+            }
+
+            #House-HR-Hub-Logo-Row>div>button {
+                min-width: 0rem;
+            }
+
+
+            div.input-group {
+                width: 14rem;
+            }
+
+        }
+
+        /* Set the style for box with max-width 1000px - END */
+
+
+        /* Style top navbar - START */
+        @media all and (min-width: 992px) {
+            .navbar .dropdown-menu-end {
+                right: 0;
+                left: auto;
+            }
+
+            .navbar .nav-item .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                margin-top: 0;
+            }
+
+            .navbar .nav-item:hover .nav-link {
+                color: #fff;
+            }
+
+            .navbar .dropdown-menu.fade-down {
+                top: 80%;
+                transform: rotateX(-75deg);
+                transform-origin: 0% 0%;
+            }
+
+            .navbar .dropdown-menu.fade-up {
+                top: 180%;
+            }
+
+            .navbar .nav-item:hover .dropdown-menu {
+                transition: .3s;
+                opacity: 1;
+                visibility: visible;
+                top: 100%;
+                transform: rotateX(0deg);
+            }
+
+            /* margin for links on top navbar */
+            .navbar-dark .navbar-nav .nav-link {
+                margin: 1rem 2rem;
+            }
+
+            /* removing padding for links on top navbar */
+            .navbar {
+                padding-bottom: 0rem;
+                padding-top: 0rem;
+            }
+
+            /* background for hiring/developing/retaining dropdowns  */
+            ul.dropdown-menu.fade-up#hiring-dropdown,
+            ul.dropdown-menu.fade-up#developing-dropdown,
+            ul.dropdown-menu.fade-up#retaining-dropdown {
+                background: rgb(236, 235, 235);
+            }
+
+
+            /* hovering effect on hiring dropdown */
+            ul#hiring-dropdown.dropdown-menu.fade-up>li>a.dropdown-item:hover {
+                background: #005B8F;
+                color: white;
+                text-decoration: none;
+                font-style: italic;
+            }
+
+            /* hovering effect on developing dropdown */
+            ul#developing-dropdown.dropdown-menu.fade-up>li>a.dropdown-item:hover {
+                background: #027353;
+                color: white;
+                text-decoration: none;
+                font-style: italic;
+            }
+
+            /* retaining effect on hiring dropdown */
+            ul#retaining-dropdown.dropdown-menu.fade-up>li>a.dropdown-item:hover {
+                background: #F2BD1D;
+                color: white;
+                text-decoration: none;
+                font-style: italic;
+            }
+
+            /* hovering effect on Additional Services dropdown */
+            ul#additional-services-dropdown.dropdown-menu.fade-up>li>a.dropdown-item:hover {
+                background: gray;
+                color: white;
+                text-decoration: none;
+                font-style: italic;
+            }
+
+            ul#additional-services-dropdown.dropdown-menu.fade-up {
+                font-size: 22px;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: white;
+                font-weight: bold;
+            }
+
+        }
+
+        .navbar {
+            background: #005B8F;
+        }
+
+        a.nav-link {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a.dropdown-item {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a.nav-link.dropdown-toggle::after {
+            display: none;
+        }
+
+        a.nav-link.dropdown-toggle {
+            color: #005B8F;
+            font-weight: bold;
+        }
+
+        /* setting dropdowns color to black */
+        #additional-services-dropdown>li>a,
+        #retaining-dropdown>li>a,
+        #developing-dropdown>li>a,
+        #hiring-dropdown>li>a {
+            color: black;
+        }
+
+
+        /* Search box custom  */
+        .btn-outline-primary {
+            color: white;
+            border-color: white;
+        }
+
+
+        /* Style for page title */
+        #page-title {
+            font-size: 2.3rem;
+            padding-top: 1.5rem;
+            padding-bottom: 0.5rem;
+            text-align: left;
+            font-weight: bold;
+            color: #005B8F;
+            margin: 0;
+        }
+
+        /* Style for heading section of the page */
+        #page-heading-text {
+            color: black;
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Style for left nav - START */
+
+        /* LEFT SIDEBAR STYLE - START */
+
+        @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1em;
+            font-weight: 300;
+            line-height: 1.7em;
+            color: #999;
+        }
+
+        a,
+        a:hover,
+        a:focus {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .navbar {
+            padding: 15px 10px;
+            background: #fff;
+            border: none;
+            border-radius: 0;
+            margin-bottom: 40px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-btn {
+            box-shadow: none;
+            outline: none !important;
+            border: none;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px dashed #ddd;
+            margin: 40px 0;
+        }
+
+        /* ----------- SIDEBAR STYLE  ---------- */
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+        }
+
+        #sidebar {
+            /* min-width: 200px;
+      max-width: 250px; */
+            width: 240px;
+            background: #003349;
+            color: #fff;
+            transition: all 0.5s;
+
+            border-color: #003349;
+            border-width: 10px;
+        }
+
+        #sidebar.active {
+            margin-left: -250px;
+        }
+
+        #sidebar .sidebar-header {
+            padding: 20px;
+            background: #6d7fcc;
+        }
+
+        #sidebar ul.components {
+            padding: 20px 0;
+            border-bottom: 1px solid #47748b;
+        }
+
+        #sidebar ul p {
+            color: #fff;
+            padding: 10px;
+        }
+
+        #sidebar ul li a {
+            padding: 10px;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        #sidebar ul li a:hover {
+            color: black;
+            background: #fff;
+        }
+
+
+        /* Highlight 'Developing' section @ page load  - START */
+        /* Note : The 'Hiring' sub sections gets expanded by js */
+
+        a#developing {
+            /* color: black;
+            background: #f7f3f3; */
+            font-weight: bold;
+        }
+
+        /* Highlight 'Developing' section @ page load  - END */
+
+
+
+        /* customizing Hiring section - START  */
+        #sidebar ul li.active>a,
+        a#hiring[aria-expanded="true"] {
+            color: black;
+            background: #f7f3f3;
+            font-weight: bold;
+        }
+
+        ul ul#hiringSubmenu a {
+            font-size: 0.9em !important;
+            padding-left: 30px !important;
+            background: #f7f3f3;
+            color: black;
+        }
+
+        /* customizing Hirection section - END  */
+
+
+
+        /* customizing Developing section - START  */
+        #sidebar ul li.active>a,
+        a#developing[aria-expanded="true"] {
+            color: black;
+            background: #f7f3f3;
+            font-weight: bold;
+        }
+
+        ul ul#developingSubmenu a {
+            font-size: 0.9em !important;
+            padding-left: 30px !important;
+            background: #f7f3f3;
+            color: black;
+        }
+
+        /* customizing Developing section - END  */
+
+
+
+        /* customizing Retaining section - START  */
+        #sidebar ul li.active>a,
+        a#retaining[aria-expanded="true"] {
+            color: black;
+            background: #f7f3f3;
+            font-weight: bold;
+        }
+
+        ul ul#retainingSubmenu a {
+            font-size: 0.9em !important;
+            padding-left: 30px !important;
+            background: #f7f3f3;
+            color: black;
+        }
+
+        /* customizing Retaining section - END  */
+
+        /* Highlight 'Intern Resoures' section @ page load  - START */
+        /* Note : The 'Intern Resoures' sub sections gets expanded by js */
+        a#Intern-Coordinators,
+        a#For-Interns {
+            color: black;
+            background: #f7f3f3;
+            /* font-weight: bold; */
+        }
+
+
+
+        #home,
+        #hiring,
+        #developing,
+        #retaining,
+        #AdditionalServices,
+        li#ResumeBank_link>a#ResumeBank,
+        a#intern-resources
+
+        /* li#NewMemberResources_link>a#NewMemberResources, */
+            {
+            font-weight: bold;
+            text-align: left;
+        }
+
+
+        a[data-toggle="collapse"] {
+            position: relative;
+        }
+
+        .dropdown-toggle::after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        ul ul a {
+            font-size: 0.9em !important;
+            padding-left: 30px !important;
+            background: #b4b8c9;
+        }
+
+
+
+        /* ----------    MEDIAQUERIES  ------------------- */
+
+        @media (max-width: 768px) {
+            #sidebar {
+                margin-left: -250px;
+            }
+
+            #sidebar.active {
+                margin-left: 0;
+            }
+
+            #sidebarCollapse span {
+                display: none;
+            }
+        }
+
+
+        ol.breadcrumb {
+            background-color: #f7f3f3;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-dark {
+            margin: 0px;
+            padding: 0;
+        }
+
+        .card-title,
+        .card-text {
+            color: white;
+        }
+
+        #page-description {
+            color: black;
+        }
+
+
+        ul#hiring-dropdown,
+        ul#developing-dropdown,
+        ul#retaining-dropdown {
+            font-size: 22px;
+        }
+
+
+        #home,
+        #hiring,
+        #developing,
+        #retaining,
+        #AdditionalServices,
+        #ResumeBank,
+        #NewMemberResources {
+            color: white;
+        }
+
+
+        #hiringSubmenu,
+        #developingSubmenu,
+        #retainingSubmenu,
+        #intern-resourcesSubmenu {
+            font-size: 20px;
+        }
+
+        a.sidebar-link {
+            color: white;
+        }
+
+        a.link_breadcrum:hover {
+            color: blue;
+        }
+
+        .link_breadcrum {
+            color: #6c757d;
+
+        }
+
+
+        /* Highlight 'Intern Resources' section @ page load  - START */
+
+        /* Note : The 'Intern Resources' sub sections gets expanded by js */
+        a#intern-resources {
+            color: black;
+            background: #f7f3f3;
+            font-weight: bold;
+        }
+
+        /* Style for items under Internal Resources on left navigation */
+        ul>li>a {
+            text-align: left;
+        }
+
+
+        /* Highlight 'Intern Resources' section @ page load  - END */
+
+
+        /* Styles for Intern Resources - For Offices - START */
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #eee
+        }
+
+        .border-grey {
+            border: 1px solid;
+            border-end-start-radius: 5px;
+            border-end-end-radius: 5px;
+            border-top: none;
+            border-color: #dee2e6
+        }
+
+        .active {
+            background-color: white;
+        }
+
+        #myTab {
+            background-color: #dee2e6
+        }
+
+        .nav-link {
+            color: #666
+        }
+
+        button#hiring-tab,
+        button#developing-tab,
+        button#retaining-tab {
+            background-color: white;
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        button#hiring-tab.active,
+        button#hiring-tab:hover {
+            background-color: #005B8F;
+            color: white;
+            /* font-weight: bolder; */
+        }
+
+        button#developing-tab.active,
+        button#developing-tab:hover {
+            background-color: #007a53;
+            color: white;
+            /* font-weight: bolder; */
+        }
+
+        button#retaining-tab.active,
+        button#retaining-tab:hover {
+            background-color: #f0b323;
+            color: white;
+            /* font-weight: bolder; */
+        }
+
+        /* Style for border of tab buttons */
+        button#hiring-tab,
+        button#developing-tab,
+        button#retaining-tab {
+            width: 97%;
+            border: .5px solid #555555;
+        }
+
+        /* Style - backgorund color for tab items */
+        li.nav-item.intern {
+            background-color: white;
+        }
+
+        /* Style - border of the tab body */
+        div.border-grey.bg-white.p-3.tab-content {
+            border: .5px solid #555555;
+        }
+
+        /* Style - for tab body text */
+        p.tab-body-text {
+            color: black;
+            text-align: left;
+        }
+
+
+        /* Style- grouping accordions in a tab */
+        div.acordions-group {
+            margin-top: 2rem;
+            margin-bottom: 3rem
+        }
+
+        /*  Accordion button at page load */
+        button.accordion-button {
+            background-color: white;
+            height: 4rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /*  Accordion button hover effect */
+        button.accordion-button:hover {
+            background-color: #005b8f;
+            color: white;
+        }
+
+        /*  Accordion button focus effect */
+        button.accordion-button:focus {
+            background-color: #005b8f;
+            color: white;
+        }
+
+        /*  Accordion body background color */
+        div.accordion-body {
+            background: #a0cfeb63;
+        }
+
+        /*  Resources in accordion body */
+        a.document {
+            color: blue;
+            font-size: 1.075rem;
+        }
+
+        /*  Resources hover effect in accordion body */
+        a.document:hover {
+            color: red;
+            font-style: italic;
+        }
+
+        a.email-link {
+            color: blue;
+            font-size: 1.075rem;
+        }
+
+        /*  Resources hover effect on email link */
+        a.email-link:hover {
+            color: red;
+        }
+
+        /* Styles for Intern Resources - For Offices - END */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- To insert background image -->
+
+    <!-- Top navbar  - START -->
+    <div id="topNavigationBar">
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="container-fluid" style="background-color:#f7f3f3;">
+        <div class="row" style="padding:0% 8%;">
+            <div class="row">
+                <nav aria-label="breadcrumb" style="font-size:18px;">
+                    <ol class="breadcrumb" style="padding:1% 0%; margin:0;">
+                        <li class="breadcrumb-item" aria-current="page"><a class="link_breadcrum"
+                                style="text-decoration:underline;"
+                                href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SitePages/Home.aspx">House
+                                HR Hub</a>
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page"><a class="link_breadcrum"
+                                style="text-decoration:underline;"
+                                href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SitePages/Intern%20Resources.aspx#">Intern
+                                Resources</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page" style="background-color:#f7f3f3;">Intern
+                            Resources For Intern Coordinators</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page header -->
+    <div class="container-fluid" style="background-color:#f7f3f3;">
+        <div class="row" style="padding:0% 6%;">
+            <div class="row">
+                <div class="container-fluid" style="padding-bottom:2rem;">
+                    <div class="row">
+                        <div class="col" style="padding-left:3rem;">
+                            <p id="page-title">
+                                Intern Resources: For Intern Coordinators
+                            </p>
+                            <div class="row" id="header" style="text-align:left;">
+                                <p id="page-heading-text">This page contains resources to help intern coordinators
+                                    create successful internship experiences. Explore the resources below to assist with
+                                    your hiring, development, and retention of interns.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Body -->
+    <div class="container-fluid">
+        <div class="row" style="padding:3% 9.7%;">
+            <div class="row">
+
+                <div class="container-fluid" style="padding-bottom:2rem;">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+                            <!-- Hide leftnav -->
+                            <div id="leftNavigation">
+                                <!-- Dynamic content -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 col-lg-9 col-xl-9 mx-auto">
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="container-fluid" style="padding-bottom:2rem;">
+                                            <div class="row">
+                                                <div class="container mt-5" style="margin-top: 0rem !important;">
+                                                    <ul class="m-0 nav nav-fill nav-justified nav-tabs" id="myTab"
+                                                        role="tablist">
+                                                        <li class="nav-item intern" role="presentation"> <button
+                                                                class="active nav-link" id="hiring-tab"
+                                                                data-bs-toggle="tab" data-bs-target="#profile"
+                                                                type="button" role="tab" aria-selected="false"
+                                                                style="margin-right:auto;">
+                                                                Hiring </button> </li>
+                                                        <li class="nav-item intern" role="presentation"> <button
+                                                                class="nav-link" id="developing-tab"
+                                                                data-bs-toggle="tab" data-bs-target="#messages"
+                                                                type="button" role="tab" aria-selected="false"
+                                                                style="margin-left:auto; margin-right:auto;">
+                                                                Developing </button> </li>
+                                                        <li class="nav-item intern" role="presentation"> <button
+                                                                class="nav-link" id="retaining-tab" data-bs-toggle="tab"
+                                                                data-bs-target="#settings" type="button" role="tab"
+                                                                aria-selected="false" style="margin-left:auto;">
+                                                                Retaining </button> </li>
+                                                    </ul>
+                                                    <div class="border-grey bg-white p-3 tab-content">
+                                                        <div class="tab-pane active" id="profile" role="tabpanel"
+                                                            aria-labelledby="hiring-tab">
+                                                            <div
+                                                                style="margin-left:auto; margin-right:auto; width:95%;">
+                                                                <p class="tab-body-text" style="margin-bottom:0px;">
+                                                                    Looking for help with bringing
+                                                                    in the best interns for your office? The <strong
+                                                                        style="font-weight:bold;">Hiring</strong>
+                                                                    section provides resources to help intern
+                                                                    coordinators with creating successful internships,
+                                                                    recruiting and selecting applicants, preparing for
+                                                                    intern arrivals, and welcoming interns on their
+                                                                    first day. </p>
+                                                                <div class="acordions-group" style="margin-top:16px;">
+                                                                    <div class="accordion" id="accordionHiring">
+                                                                        <div class="accordion-item">
+                                                                            <h1 class="accordion-header"
+                                                                                id="headingHiringOne">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseHiringOne"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseHiringOne"
+                                                                                    onclick="HiringIconToggleFunction('CreatingSuccessfulInternshipExperiences')">
+                                                                                    Creating Successful Internship
+                                                                                    Experiences
+                                                                                    &nbsp <img class="icon"
+                                                                                        id="NewResourceIcon"
+                                                                                        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/NewResourceIcon1.svg"
+                                                                                        style="width:4%; -ms-transform: rotate(10deg); transform: rotate(10deg);"
+                                                                                        alt="">
+                                                                                </button>
+                                                                            </h1>
+                                                                            <div id="collapseHiringOne"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingHiringOne"
+                                                                                data-bs-parent="#accordionHiring">
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern-Coordinator-Orientation.pdf?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Coordinator Orientation')">
+                                                                                            Intern Coordinator
+                                                                                            Orientation </a>
+                                                                                        <!-- <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span> -->
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern-Coordinator-Handbook.pdf?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Coordinator Handbook')">
+                                                                                            Intern Coordinator Handbook
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span> -->
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:b:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern%20Coordinator%20FAQ.pdf?csf=1&web=1&e=rpk77M?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Coordinator FAQ')">
+                                                                                            Intern Coordinator FAQ
+                                                                                        </a>
+                                                                                        <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span>
+                                                                                        <br>
+
+
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/sites/housenet.house.gov/files/documents/house-paid-internship-program.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('House Paid Internship Program')">
+                                                                                            House Paid Internship
+                                                                                            Program </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://caocoach.house.gov/?a=Files.Serve&File_id=CEB88CE4-68E1-4E40-B1D0-F1EA4089D13C#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Handbook Template')">
+                                                                                            Intern Handbook Template
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://cha.house.gov/_cache/files/a/8/a8cc152c-838f-4374-aabf-450490e96778/0B6B254E067CE79A18BBC6EDF6A21A6A.committees-congressional-handbook-09-28-23.pdf"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Committees Congressional Handbook: Interns')">
+                                                                                            Committees' Congressional
+                                                                                            Handbook: Interns </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingHiringTwo">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseHiringTwo"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseHiringTwo"
+                                                                                    onclick="HiringIconToggleFunction('RecruitingAndSelecting')">
+                                                                                    Recruiting & Selecting
+                                                                                    
+                                                                                    &nbsp <img class="icon"
+                                                                                        id="NewResourceIcon"
+                                                                                        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/NewResourceIcon1.svg"
+                                                                                        style="width:4%; -ms-transform: rotate(10deg); transform: rotate(10deg);"
+                                                                                        alt="">
+
+                                                                                    &nbsp <a
+                                                                                        title="Popular resource"><img
+                                                                                            class="icon"
+                                                                                            id="Fire-RecruitingAndSelecting"
+                                                                                            src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/Fire.png"
+                                                                                            style="width:15%;" alt=""
+                                                                                            title="Popular Resources"></a>
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="collapseHiringTwo"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingHiringTwo"
+                                                                                data-bs-parent="#accordionHiring">
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern-Job-Profile.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Job Profile')">
+                                                                                            Intern Job Profile </a>
+                                                                                        &nbsp <img class="icon"
+                                                                                            id="NewResourceIcon"
+                                                                                            src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/Fire.png"
+                                                                                            style="width:2%;" alt=""
+                                                                                            title="Popular Resources">
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern-Job-Posting-Example.docx?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Job Posting Example')">
+                                                                                            Intern Job Posting Example
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=*7B0FEFE9B9-54FA-49A6-91B2-0462DF0BAD43*7D&file=Intern-Position-Description.docx&action=default&mobileredirect=true__;JSU!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92tykmcW8$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Position Description')">
+                                                                                            Intern Position Description
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:b:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Sample%20Intern%20Interview%20Questions.pdf?csf=1&web=1&e=B9wOKY"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Sample Intern Interview Questions')">
+                                                                                            Sample Intern Interview Questions
+                                                                                        </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:b:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Quick%20Tips%20for%20Conducting%20Intern%20Interviews.pdf?csf=1&web=1&e=qJWaRV"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Quick Tips for Conducting Intern Interviews')">
+                                                                                            Quick Tips for Conducting Intern Interviews
+                                                                                        </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                        <br>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingHiringThree">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseHiringThree"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseHiringThree"
+                                                                                    onclick="HiringIconToggleFunction('OnboardingPreparingForInternArrival')">
+                                                                                    Onboarding: Preparing for Intern
+                                                                                    Arrival
+                                                                                    &nbsp <img class="icon"
+                                                                                        id="NewResourceIcon"
+                                                                                        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/NewResourceIcon1.svg"
+                                                                                        style="width:4%; -ms-transform: rotate(10deg); transform: rotate(10deg);"
+                                                                                        alt="">
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="collapseHiringThree"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingHiringThree"
+                                                                                data-bs-parent="#accordionHiring">
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern%20Welcome%20Letter%20Template.docx?d=w5c48a6597fe2435cb9322423239e24e1&csf=1&web=1&e=QyPeby#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Welcome Letter Template')">
+                                                                                            Intern Welcome Letter Template </a>
+                                                                                            <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span>
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                        href="https://ushouse.sharepoint.com/:b:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern%20Coordinator%20Checklist%20for%20Onboarding%20a%20New%20Intern.pdf?csf=1&web=1&e=wAfUy9"
+                                                                                        style="text-decoration:none;"
+                                                                                        target="_blank"
+                                                                                        onclick="downloadResource('Intern Coordinator Checklist for Onboarding a New Intern')">
+                                                                                        Intern Coordinator Checklist for Onboarding a New Intern </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                    <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/sites/housenet.house.gov/files/forms/paf_-_committee_house_paid_internship_program_-_04-01-22.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Payroll Authorization Form - Committee')">
+                                                                                            Intern Payroll Authorization
+                                                                                            Form - Committee </a>
+                                                                                        <!-- <span
+                                                                                    style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                    Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/sites/housenet.house.gov/files/forms/paf_leadership-house-paid-internship-program.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Payroll Authorization Form - Leadership')">
+                                                                                            Intern Payroll Authorization
+                                                                                            Form - Leadership </a>
+                                                                                        <br>
+                                                                                        <!-- <span
+                                                                                    style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                    Updated! </span> -->
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/sites/housenet.house.gov/files/forms/paf_member-office-house-paid-internship-program.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Payroll Authorization Form - Member Office')">
+                                                                                            Intern Payroll Authorization
+                                                                                            Form - Member Office </a>
+                                                                                        <!-- <span
+                                                                            style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                            Updated! </span> -->
+
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://cha.house.gov/members-congressional-handbook#13CE3D07-36AA-40AF-A304-7CCDA348840C"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('House Paid Internship Program - Member Office Regulations')">
+                                                                                            House Paid Internship
+                                                                                            Program - Member Office
+                                                                                            Regulations </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://cha.house.gov/committees-congressional-handbook#D70EC29A-6C80-46C5-A046-F50C55BF5734"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Paid House Committee Internship Program - Regulations')">
+                                                                                            Paid House Committee
+                                                                                            Internship Program -
+                                                                                            Regulations </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/sites/housenet.house.gov/files/forms/transit-benefit-combined-voucher-form2023.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Transit Benefit Combined Voucher')">
+                                                                                            Transit Benefit Combined
+                                                                                            Voucher </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/campus/emergency-preparedness/emergency-actions?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Emergency Action Information')">
+                                                                                            Emergency Action Information
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://housenet.house.gov/campus/emergency-preparedness/emergency-faqs"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Emergency Preparedness FAQs')">
+                                                                                            Emergency Preparedness FAQs
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span> -->
+                                                                                        <br>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingHiringFour">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseHiringFour"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseHiringFour"
+                                                                                    onclick="HiringIconToggleFunction('OnboardingWelcomingInterns')">
+                                                                                    Onboarding: Welcoming Interns on the
+                                                                                    First Day
+                                                                                    <!-- &nbsp <a
+                                                                                        title="Popular resource"><img
+                                                                                            class="icon"
+                                                                                            id="Fire-Onboarding-Welcoming-Interns"
+                                                                                            src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/Fire.png"
+                                                                                            style="width:15%;" alt=""
+                                                                                            title="Popular Resources"></a> -->
+
+                                                                                    &nbsp <img class="icon"
+                                                                                            id="NewResourceIcon"
+                                                                                            src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/NewResourceIcon1.svg"
+                                                                                            style="width:4%; -ms-transform: rotate(10deg); transform: rotate(10deg);"
+                                                                                            alt="">
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="collapseHiringFour"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingHiringFour"
+                                                                                data-bs-parent="#accordionHiring">
+
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Welcome-Intern-Checklist.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Welcoming Interns to the House')">
+                                                                                            Welcoming Interns to the
+                                                                                            House </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:p:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern%20Welcome%20Packet.pptx?d=wb6d4508b3360426180ed2c1303e01795&csf=1&web=1&e=6wITCT#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Welcome Packet')">
+                                                                                            Intern Welcome Packet </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                        <br>
+
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:p:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=%7BE8238B87-F5CB-42F3-8CE9-6368FEE87EFD%7D&file=Intern%27s%20First%20Day%20Overview.pptx&action=edit&mobileredirect=true#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Interns First Day Overview')">
+                                                                                            Intern's First Day Overview </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                        <br>
+
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:p:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern%20Scavenger%20Hunt.pptx?d=w1612b892c2b84886b8ddeede518c3c8e&csf=1&web=1&e=wAaeED#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Scavenger Hunt')">
+                                                                                            Intern Scavenger Hunt </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                        <br>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="messages" role="tabpanel"
+                                                            aria-labelledby="developing-tab">
+                                                            <div
+                                                                style="margin-left:auto; margin-right:auto; width:95%;">
+                                                                <p class="tab-body-text" style="margin-bottom:0px;">
+                                                                    Looking for guidance on
+                                                                    helping your interns grow and succeed? The <b
+                                                                        style="font-weight:bold;">Developing</b> section
+                                                                    provides resources to help intern coordinators with
+                                                                    the performance management process and promote their
+                                                                    interns' professional growth within their current
+                                                                    roles and beyond. </p>
+                                                                <div class="acordions-group" style="margin-top:16px;">
+                                                                    <div class="accordion" id="accordionDeveloping">
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingDevelopingOne">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseDevelopingOne"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseDevelopingOne">
+                                                                                    Performance Management
+                                                                                    &nbsp <img class="icon"
+                                                                                        id="NewResourceIcon"
+                                                                                        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/NewResourceIcon1.svg"
+                                                                                        style="width:4%; -ms-transform: rotate(10deg); transform: rotate(10deg);"
+                                                                                        alt="">
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="collapseDevelopingOne"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingDevelopingOne"
+                                                                                data-bs-parent="#accordionDeveloping">
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+                                                                                        <a class="document"
+                                                                                            href="https://cha.house.gov/_cache/files/0/c/0cad5127-dde4-4304-aee9-6567ec792e70/B31F4F320E311508D4A2F5BA9DB89BA7.current-model-intern-handbook.pdf"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Model Intern Handbook')">
+                                                                                            Model Intern Handbook </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:b:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Intern%20Performance%20Evaluation%20Form%20.pdf?csf=1&web=1&e=fqc2nA"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern Performance Evaluation Form')">
+                                                                                            Intern Performance Evaluation Form </a>
+                                                                                        <span
+                                                                                        style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        New! </span>
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared Documents/Quick Tips for Delivering Performance Feedback.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Quick Tips for Delivering Performance Feedback')">
+                                                                                            Quick Tips for Delivering
+                                                                                            Performance Feedback </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingDevelopingTwo">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseDevelopingTwo"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseDevelopingTwo">
+                                                                                    Professional Growth
+                                                                                    <!-- &nbsp <img class="icon"
+                                                                                        id="NewResourceIcon"
+                                                                                        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/NewResourceIcon1.svg"
+                                                                                        style="width:4%; -ms-transform: rotate(10deg); transform: rotate(10deg);"
+                                                                                        alt=""> -->
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="collapseDevelopingTwo"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingDevelopingTwo"
+                                                                                data-bs-parent="#accordionDeveloping">
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+                                                                                        <a class="document"
+                                                                                            href="https://caocoach.house.gov/_cache/files/e/8/e8ce6a53-fdb1-4ff9-8482-f332a75a1de7/A71BE5D9B25A5D4B02EB67630CBE9765.cao-coach---how-to-be-the-best-intern.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('How to be the Best Intern')">
+                                                                                            How to be the Best Intern
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://caocoach.house.gov/intern#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('CAO Coach: Interns Page')">
+                                                                                            CAO Coach: Interns Page </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SitePages/CareerPaths.aspx#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Member Office Career Paths')">
+                                                                                            Member Office Career Paths </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared*20Documents/Career*20Paths/Administrative-Career-Pathway-for-Member-Offices.pdf__;JSU!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92a8_ntaw$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Administrative Path')">
+                                                                                            Administrative Path </a>
+                                                                                        <!-- <span
+                                                                style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared*20Documents/Career*20Paths/Legislative-Career-Pathway-for-Member-Offices.pdf__;JSU!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92N0Ohado$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Legislative Path')">
+                                                                                            Legislative Path </a>
+                                                                                        <!-- <span
+                                                            style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                            Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared*20Documents/Career*20Paths/Communications-Career-Pathway-for-Member-Offices.pdf__;JSU!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92-kyBm8c$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Communications Path')">
+                                                                                            Communications Path </a>
+                                                                                        <!-- <span
+                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Career%20Paths/District-Career-Pathway-for-Member-Offices.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('District Path')">
+                                                                                            District Path </a>
+                                                                                        <!-- <span
+                                                    style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                    Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Individual-Development-Roadmap-Template.docx?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Individual Development Roadmap Template')">
+                                                                                            Individual Development
+                                                                                            Roadmap Template </a>
+                                                                                        <!-- <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared%20Documents/Individual-Development-Roadmap-Example-Intern.pdf?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Individual Development Roadmap Example - Intern')">
+                                                                                            Individual Development
+                                                                                            Roadmap Example - Intern
+                                                                                        </a>
+                                                                                        <!-- <span
+                                                                                            style="color:red; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                            New! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=*7BB6F4C822-B899-4B6F-B957-B2BE290852DA*7D&file=Intern*20-*20TO*20-*20Staff*20Assistant*20-*20Administrative.docx&action=default&mobileredirect=true__;JSUlJSUlJSUl!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92purVrEM$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern TO Staff Assistant - Administrative')">
+                                                                                            Intern TO Staff Assistant -
+                                                                                            Administrative </a>
+                                                                                        <!-- <span
+                                                                                    style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                    Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=*7BD0A38C02-EEE1-43F7-AD07-27EF7A88AC5F*7D&file=Intern*20-*20TO*20-*20Staff*20Assistant*20-*20Communications.docx&action=default&mobileredirect=true__;JSUlJSUlJSUl!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92BKBIsyw$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern TO Staff Assistant - Communications')">
+                                                                                            Intern TO Staff Assistant -
+                                                                                            Communications </a>
+                                                                                        <!-- <span
+                                                                                style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=*7B4C796341-3E92-44C5-8185-6C14F3B9662C*7D&file=Intern*20-*20TO*20-*20Staff*20Assistant*20-*20District.docx&action=default&mobileredirect=true__;JSUlJSUlJSUl!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92cuZp-Wc$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern TO Staff Assistant - District')">
+                                                                                            Intern TO Staff Assistant -
+                                                                                            District </a>
+                                                                                        <!-- <span
+                                                                            style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                            Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=*7BEAC1897B-301F-44F7-AF04-01906CA24384*7D&file=Intern*20-*20TO*20-*20Staff*20Assistant*20-*20Legislative.docx&action=default&mobileredirect=true__;JSUlJSUlJSUl!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92VKUX1e0$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Intern TO Staff Assistant - Legislative')">
+                                                                                            Intern TO Staff Assistant -
+                                                                                            Legislative </a>
+                                                                                        <!-- <span
+                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://urldefense.com/v3/__https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/_layouts/15/Doc.aspx?sourcedoc=*7BF1BD0D6C-6A30-4B27-9401-B9C70B73848E*7D&file=Staff-Assistant-Position-Description.docx&action=default&mobileredirect=true__;JSU!!Bg5easoyC-OII2vlEqY8mTBrtW-N4OJKAQ!LtgP7CFvJlsaR5FJKDsspQJmuhl7saSD0exC76GTK3EBspdVlyuIhsyYaohQC79nQJInyiFL4zKGdZxtemDpUFtz9U92O1HZj9g$?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Staff Assistant Position Description')">
+                                                                                            Staff Assistant Position
+                                                                                            Description </a>
+                                                                                        <!-- <span
+                                                                    style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                    Updated! </span> -->
+                                                                                        <br>
+
+
+
+
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="settings" role="tabpanel"
+                                                            aria-labelledby="retaining-tab">
+                                                            <div
+                                                                style="margin-left:auto; margin-right:auto; width:95%;">
+                                                                <p class="tab-body-text" style="margin-bottom:0px;">
+                                                                    Looking for assistance with
+                                                                    facilitating your intern's transition out of your
+                                                                    office or into a new role? The <b
+                                                                        style="font-weight:bold;">Retaining</b> section
+                                                                    provides resources that assist intern coordinators
+                                                                    with managing the transition as the internship comes
+                                                                    to a close.</p>
+                                                                <div class="acordions-group" style="margin-top:16px;">
+                                                                    <div class="accordion" id="accordionRetaining">
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingRetainingOne">
+                                                                                <button
+                                                                                    class="accordion-button collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseRetainingOne"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseRetainingOne"
+                                                                                    onclick="RetainingIconToggleFunction('ManagingStaffTransitions')">
+                                                                                    Managing Staff Transitions
+
+                                                                                    <!-- &nbsp <a
+                                                                                        title="Popular resource"><img
+                                                                                            class="icon"
+                                                                                            id="Fire-ManagingStaffTransitions"
+                                                                                            src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/Fire.png"
+                                                                                            style="width:15%;" alt=""
+                                                                                            title="Popular Resources"></a>-->
+
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="collapseRetainingOne"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingRetainingOne"
+                                                                                data-bs-parent="#accordionRetaining">
+                                                                                <div class="accordion-body">
+                                                                                    <div
+                                                                                        style="margin-left:1rem; text-align:left;">
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/Shared Documents/Exit Interview Guide.pdf#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Exit Interview Guide')">
+                                                                                            Exit Interview Guide </a>
+                                                                                        <!-- <span
+                                                                                        style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                        Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/:w:/r/sites/HumanResources/CAOHRHUB/Shared%20Documents/Exit%20Interview%20Template.docx?d=wdca532f03efc461bbada91ced93f3496&csf=1&web=1&e=DshG48"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('Exit Interview Template')">
+                                                                                            Exit Interview Template </a>
+                                                                                        <!-- <span
+                                                                                    style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                    Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://caocoach.house.gov/?a=Files.Serve&File_id=97A8031C-DB1B-4B43-B040-6F21773FADEB#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('How to Get the Next Job')">
+                                                                                            How to Get the Next Job </a>
+
+                                                                                        <!--&nbsp <img class="icon"
+                                                                                            id="NewResourceIcon"
+                                                                                            src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/Fire.png"
+                                                                                            style="width:2%;" alt=""
+                                                                                            title="Popular Resources">-->
+
+                                                                                        <!-- <span
+                                                                                style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                                Updated! </span> -->
+                                                                                        <br>
+                                                                                        <a class="document"
+                                                                                            href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SitePages/ResumeBank.aspx#?web=1"
+                                                                                            style="text-decoration:none;"
+                                                                                            target="_blank"
+                                                                                            onclick="downloadResource('House Resume Bank')">
+                                                                                            House Resume Bank </a>
+                                                                                        <!-- <span
+                                                                            style="color:#891F1F; font-style:italic ; font-weight:bold; font-size:small; vertical-align: text-top;">
+                                                                            Updated! </span> -->
+                                                                                        <br>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p style="color:black; padding: 2rem 1rem;">For questions, please
+                                                    contact <a class="email-link"
+                                                        href="mailto:InternResources@mail.house.gov">InternResources@mail.house.gov</a>
+                                                </p>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer - START -->
+    <div id="Footer">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        function HiringIconToggleFunction(param) {
+            if (param === 'RecruitingAndSelecting') {
+                if (document.getElementById("Fire-RecruitingAndSelecting").style.display === "none") {
+                    document.getElementById("Fire-RecruitingAndSelecting").style.display = "block";
+                } else {
+                    document.getElementById("Fire-RecruitingAndSelecting").style.display = "none";
+                }
+
+                document.getElementById("Fire-Onboarding-Welcoming-Interns").style.display = "block";
+
+            } else if (param === 'OnboardingWelcomingInterns'){
+                if (document.getElementById("Fire-Onboarding-Welcoming-Interns").style.display === "none") {
+                    document.getElementById("Fire-Onboarding-Welcoming-Interns").style.display = "block";
+                } else {
+                    document.getElementById("Fire-Onboarding-Welcoming-Interns").style.display = "none";
+                }
+
+                document.getElementById("Fire-RecruitingAndSelecting").style.display = "block";
+
+            } else{
+
+                document.getElementById("Fire-RecruitingAndSelecting").style.display = "block";
+                document.getElementById("Fire-Onboarding-Welcoming-Interns").style.display = "block";
+
+            }            
+            
+        }
+
+        function RetainingIconToggleFunction(param) {
+            if (document.getElementById("Fire-ManagingStaffTransitions").style.display === "none") {
+                //document.getElementById("Fire-ManagingStaffTransitions").style.display = "block";
+            } else {
+                //document.getElementById("Fire-ManagingStaffTransitions").style.display = "none";
+            }
+        }
+
+    </script>
+
+    <!-- START -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+
+
+    <!-- Bootstrap JS - for Left Nav -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- END -->
+
+
+    <!-- JQuery 3.6.1  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- House HrHub Merged JS    -->
+    <script
+        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/js/House-HR-Hub-Merged.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Sitemap</title>
+
+
+
+    <link
+        href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+        rel="stylesheet" crossorigin="anonymous">
+
+
+    <style>
+        /* To strip and make SharePoint page blank - START */
+
+        #O365_NavHeader,
+        #suitBarTop,
+        #sideNavBox,
+        #s4-titlerow,
+        #titleAreaBox,
+        #s4-ribbonrow,
+        #WebPartWPQ5_ChromeTitle {
+            display: none;
+        }
+
+        div#suiteBarTop.ms-fullWidth {
+            display: none;
+        }
+
+        div#suitBarTop.ms-fullWidth {
+            display: none;
+        }
+
+        #contentBox {
+            margin-left: 20px !important;
+        }
+
+        div#s4-titlerow.ms-dialogHidden {
+            display: none !important;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        /* To strip and make SharePoint page blank - END */
+
+
+        #contentRow {
+            padding-top: 0px;
+        }
+
+        /* in progress */
+
+        #contentBox {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        /* Removes white space under footer */
+        #s4-bodyContainer {
+            padding-bottom: 0px !important;
+        }
+
+        /* Removes white space under footer */
+        .ms-webpartzone-cell {
+            margin: 0px !important;
+        }
+
+        #s4-workspace {
+            overflow: auto;
+        }
+
+
+        /* Style for HR Hub Logo at top left corner of the page */
+        #House-HR-Hub-Logo {
+            width: 250px;
+            padding-top: 1rem;
+        }
+
+
+        @media all and (max-width: 1000px) {
+
+            #SearchKey {
+                max-width: 30rem;
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            #House-HR-Hub-Logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+        }
+
+        /* Sitemap styles - START */
+
+        div.accordion-item {
+            border-width: .5rem;
+            border-color: #255871;
+        }
+
+        div.accordion-body {
+            text-align: left;
+            padding-right: 0px;
+            /* padding-top:0px; */
+            padding-top: 12px;
+        }
+
+        .accordion-item.first-level {
+            border-width: .3rem;
+            border-color: #255871;
+        }
+
+        .accordion-item.second-level {
+            border-width: .1rem;
+            border-color: #255871;
+        }
+
+
+        /* font-size for top level accordion header */
+        button.accordion-button.top-level {
+            font-size: 1.45rem;
+        }
+
+
+        button.accordion-button.first-level-button {
+            font-size: 1.25rem;
+        }
+
+        button.accordion-button.second-level-button {
+            font-size: 1.1rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            font-style: italic;
+        }
+
+        input.form-control.rounded {
+            font-size: 1.4rem;
+        }
+
+
+        button.accordion-button.top-level:hover {
+            background-color: #255871;
+            color: #F0B323;
+            font-weight: bold;
+        }
+
+        /* #255871; */
+
+        .accordion-button:not(.collapsed) {
+            background-color: #255871;
+            color: #F0B323;
+            font-weight: bold;
+        }
+
+
+
+
+        /* Sitemap styles - END */
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid" style="background: #003349;">
+        <div id="House-HR-Hub-Logo-Row" class="row" style="text-align:left; padding-left:7rem; padding-top:2rem;">
+            <a href="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SitePages/Home.aspx"
+                style="padding-right:125px;">
+                <img id="House-HR-Hub-Logo"
+                    src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/Images/HR-Hub/CAO-House-HR-Hub.svg">
+            </a>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div style="padding-top: 2rem; padding-bottom: 2rem;">
+                    <h1 style="color:white; font-weight:bold;">House HR Hub Help Center</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid jumbotron-fluid">
+                <div class="container" style="max-width:1000px;">
+                    <div style="padding-bottom: 4rem;">
+                        <div class="input-group">
+                            <input type="search" id="SearchKey" onclick="checkEnter();" class="form-control rounded"
+                                placeholder="Looking for a resource?" aria-label="Search"
+                                aria-describedby="search-addon" />
+                            <!-- <button id="SearchButton" type="button" class="btn btn-outline-primary" onclick="searchResource();"><i
+                    class="fas fa-search"></i></button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="leftNavigation" style="display:none;"></div>
+    <div id="topNavigationBar" style="display:none;"></div>
+    <div id="Footer" style="display:none;"></div>
+
+    <!-- <div style="background-color:#255871;"> -->
+    <div style="background-color:transparent;">
+
+        <div class="container-fluid"
+            style="width:70%; padding-top:5rem; padding-bottom:10rem; padding-left:3rem; padding-right:3rem;">
+
+            <div class="accordion accordion-flush" id="accordionFlush-Sitemap">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-Sitemap-One">
+                        <button class="accordion-button collapsed top-level" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-Sitemap-One" aria-expanded="false"
+                            aria-controls="flush-collapse-Sitemap-One">
+                            Hiring
+                        </button>
+                    </h2>
+                    <div id="flush-collapse-Sitemap-One" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-Sitemap-One" data-bs-parent="#accordionFlush-Sitemap">
+                        <div class="accordion-body">
+
+                            <!-- Hiring Accordion - START -->
+
+                            <div class="accordion accordion-flush" id="accordionFlush-Hiring">
+
+                                <div style="width:97%; margin-left:auto;">
+
+                                    <div class="accordion-item first-level">
+                                        <h2 class="accordion-header" id="flush-heading-Hiring-One">
+                                            <button class="accordion-button collapsed first-level-button" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse-Hiring-One"
+                                                aria-expanded="false" aria-controls="flush-collapse-Hiring-One">
+                                                Recruiting & Selecting
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse-Hiring-One" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading-Hiring-One"
+                                            data-bs-parent="#accordionFlush-Hiring">
+
+                                            <div class="accordion-body">
+
+                                                <div class="accordion accordion-flush"
+                                                    id="accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                    <div style="width:97%; margin-left:auto;">
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-One">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-One"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-One">
+                                                                    Overview
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-One"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-One"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Recruiting & Selecting Process</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Two">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Two"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Two">
+                                                                    Recruiting & Selecting Communications
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Two"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Two"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Recruiting & Selecting Communications
+                                                                        Guide</a><br>
+                                                                    <a href="#">Quick Tips for Making a Job
+                                                                        Offer</a><br>
+                                                                    <a href="#">Offer Letter Template</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Three">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Three"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Three">
+                                                                    Job Profiles
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Three"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Three"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Caseworker Job Profile</a><br>
+                                                                    <a href="#">Chief of Staff Job Profile</a><br>
+                                                                    <a href="#">Communications Director Job
+                                                                        Profile</a><br>
+                                                                    <a href="#">Deputy Chief of Staff Job
+                                                                        Profile</a><br>
+                                                                    <a href="#">Digital Media/Digital Media Director Job
+                                                                        Profile</a><br>
+                                                                    <a href="#">District Director Job Profile</a><br>
+                                                                    <a href="#">Field Representative Job Profile</a><br>
+                                                                    <a href="#">Intern Job Profile</a><br>
+                                                                    <a href="#">Legislative Assistant Job
+                                                                        Profile</a><br>
+                                                                    <a href="#">Legislative Correspondent Job
+                                                                        Profile</a><br>
+                                                                    <a href="#">Legislative Director Job Profile</a><br>
+                                                                    <a href="#">Operations Director Job Profile</a><br>
+                                                                    <a href="#">Press Assistant Job Profile</a><br>
+                                                                    <a href="#">Press Secretary Job Profile</a><br>
+                                                                    <a href="#">Scheduler/Executive Assistant Job
+                                                                        Profile</a><br>
+                                                                    <a href="#">Staff Assistant Job Profile</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Four">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Four"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Four">
+                                                                    Job Postings
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Four"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Four"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Job Posting Template</a><br>
+                                                                    <a href="#">Caseworker Job Posting Example</a><br>
+                                                                    <a href="#">Chief of Staff Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Communications Director Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Deputy Chief of Staff Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Digital Media/Digital Media Director Job
+                                                                        Posting Example</a><br>
+                                                                    <a href="#">District Director Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Field Representative Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Intern Job Posting Example</a><br>
+                                                                    <a href="#">Legislative Assistant Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Legislative Correspondent Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Legislative Director Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Operations Director Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Press Assistant Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Press Secretary Job Posting
+                                                                        Example</a><br>
+                                                                    <a href="#">Scheduler/Executive Assistant Job
+                                                                        Posting Example</a><br>
+                                                                    <a href="#">Staff Assistant Job Posting
+                                                                        Example</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Five">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Five"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Five">
+                                                                    Job Descriptions
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Five"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Five"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Caseworker Position Description</a><br>
+                                                                    <a href="#">Chief of Staff Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Communications Director Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Deputy Chief of Staff Position
+                                                                        Description</a><br>
+                                                                    <a href="#">District Director Position
+                                                                        Description</a><br>
+                                                                    <a href="#">District Scheduler Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Field Representative Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Intern Position Description</a><br>
+                                                                    <a href="#">Legislative Assistant Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Legislative Correspondent Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Legislative Director Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Operations Director Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Press Assistant Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Press Secretary Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Scheduler/Executive Assistant Position
+                                                                        Description</a><br>
+                                                                    <a href="#">Staff Assistant Position
+                                                                        Description</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Six">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Six"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Six">
+                                                                    House Resume Bank
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Six"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Six"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">House Resume Bank</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Seven">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Seven"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Seven">
+                                                                    Applicant Testing
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Seven"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Seven"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">District Knowledge Questionnaire</a><br>
+                                                                    <a href="#">Quick Tips for Administering a Writing
+                                                                        Test</a><br>
+                                                                    <a href="#">Writing Test Scoring Sheets</a><br>
+                                                                    <a href="#">District Office Issue Writing Test
+                                                                        Template</a><br>
+                                                                    <a href="#">Legislative Issue Writing Test
+                                                                        Template</a><br>
+                                                                    <a href="#">Media Relations Writing Test
+                                                                        Template</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Eight">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Eight"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Eight">
+                                                                    Interview & Reference Checks
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Eight"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Eight"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Quick Tips for Conducting
+                                                                        Interviews</a><br>
+                                                                    <a href="#">Structured Interview Template</a><br>
+                                                                    <a href="#">Structured Interview Example</a><br>
+                                                                    <a href="#">Quick Tips for Verifying Job Applicant
+                                                                        References</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Hiring-Recruiting-And-Selecting-Nine">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Hiring-Recruiting-And-Selecting-Nine"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Hiring-Recruiting-And-Selecting-Nine">
+                                                                    Additional Recruiting & Selecting Services
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Hiring-Recruiting-And-Selecting-Nine"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Hiring-Recruiting-And-Selecting-Nine"
+                                                                data-bs-parent="#accordionFlush-Hiring-Recruiting-And-Selecting">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Office of Diversity & Inclusion</a><br>
+                                                                    <a href="#">Office of Employee Advocacy</a><br>
+                                                                    <a href="#">Office of General Counsel</a><br>
+                                                                    <a href="#">Office of House Employment
+                                                                        Counsel</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="accordion-item first-level">
+                                        <h2 class="accordion-header" id="flush-heading-Hiring-Two">
+                                            <button class="accordion-button collapsed first-level-button" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse-Hiring-Two"
+                                                aria-expanded="false" aria-controls="flush-collapse-Hiring-Two">
+                                                Salary & Benefits
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse-Hiring-Two" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading-Hiring-Two"
+                                            data-bs-parent="#accordionFlush-Hiring">
+
+                                            <div class="accordion-body">
+
+                                                <div class="accordion accordion-flush"
+                                                    id="accordionFlushSalary-And-Benefits">
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSalary-And-Benefits-One">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSalary-And-Benefits-One"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSalary-And-Benefits-One">
+                                                                Benefits
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSalary-And-Benefits-One"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSalary-And-Benefits-One"
+                                                            data-bs-parent="#accordionFlushSalary-And-Benefits">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSalary-And-Benefits-Two">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSalary-And-Benefits-Two"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSalary-And-Benefits-Two">
+                                                                House Pay
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSalary-And-Benefits-Two"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSalary-And-Benefits-Two"
+                                                            data-bs-parent="#accordionFlushSalary-And-Benefits">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Manage Payroll</a><br>
+                                                                <a href="#">Resources for Staff Pay</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSalary-And-Benefits-Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSalary-And-Benefits-Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSalary-And-Benefits-Three">
+                                                                House Compensation & Diversity Study
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSalary-And-Benefits-Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSalary-And-Benefits-Three"
+                                                            data-bs-parent="#accordionFlushSalary-And-Benefits">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">2021 House Compensation and Diversity Study
+                                                                </a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSalary-And-Benefits-Four">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSalary-And-Benefits-Four"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSalary-And-Benefits-Four">
+                                                                Additional Salary & Benefits Services
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSalary-And-Benefits-Four"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSalary-And-Benefits-Four"
+                                                            data-bs-parent="#accordionFlushSalary-And-Benefits">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Office of Payroll & Benefits</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item first-level">
+                                        <h2 class="accordion-header" id="flush-heading-Hiring-Three">
+                                            <button class="accordion-button collapsed first-level-button" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse-Hiring-Three"
+                                                aria-expanded="false" aria-controls="flush-collapse-Hiring-Three">
+                                                Onboarding
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse-Hiring-Three" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading-Hiring-Three"
+                                            data-bs-parent="#accordionFlush-Hiring">
+
+                                            <div class="accordion-body">
+
+                                                <div class="accordion accordion-flush" id="accordionFlushOnboarding">
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header" id="flush-headingOnboarding-One">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseOnboarding-One"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseOnboarding-One">
+                                                                Resources for New Employees
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseOnboarding-One"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingOnboarding-One"
+                                                            data-bs-parent="#accordionFlushOnboarding">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">New Employee Checklist </a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header" id="flush-headingOnboarding-Two">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseOnboarding-Two"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseOnboarding-Two">
+                                                                Resources for Offices
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseOnboarding-Two"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingOnboarding-Two"
+                                                            data-bs-parent="#accordionFlushOnboarding">
+
+                                                            <div class="accordion-body">
+                                                                <a href="#">Onboarding Checklist for Offices</a><br>
+                                                                <a href="#">Welcome Letter Template</a><br>
+                                                                <a href="#">Integrating New Employees into a Remote Work
+                                                                    Environment</a><br>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header" id="flush-headingOnboarding-Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseOnboarding-Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseOnboarding-Three">
+                                                                Additional Onboarding Services
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseOnboarding-Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingOnboarding-Three"
+                                                            data-bs-parent="#accordionFlushOnboarding">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Congressional Staff Academy</a><br>
+                                                                <a href="#">Office of Payroll & Benefits</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item first-level">
+                                        <h2 class="accordion-header" id="flush-heading-Hiring--Hiring-Four">
+                                            <button class="accordion-button collapsed first-level-button" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse-Hiring--Hiring-Four"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse-Hiring--Hiring-Four">
+                                                Setting Up An Office
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse-Hiring--Hiring-Four" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading-Hiring--Hiring-Four"
+                                            data-bs-parent="#accordionFlush-Hiring">
+
+                                            <div class="accordion-body">
+
+                                                <div class="accordion accordion-flush"
+                                                    id="accordionFlushSetting-Up-An-Office">
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSetting-Up-An-Office-One">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSetting-Up-An-Office-One"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSetting-Up-An-Office-One">
+                                                                Office Structure
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSetting-Up-An-Office-One"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSetting-Up-An-Office-One"
+                                                            data-bs-parent="#accordionFlushSetting-Up-An-Office">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Office Structure Guide and Workbook</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSetting-Up-An-Office-Two">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSetting-Up-An-Office-Two"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSetting-Up-An-Office-Two">
+                                                                Handbooks
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSetting-Up-An-Office-Two"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSetting-Up-An-Office-Two"
+                                                            data-bs-parent="#accordionFlushSetting-Up-An-Office">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Members' Congressional Handbook</a><br>
+                                                                <a href="#">Committees' Congressional Handbook</a><br>
+                                                                <a href="#">Model Employee Handbook</a><br>
+                                                                <a href="#">Model Intern Handbook</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingSetting-Up-An-Office-Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseSetting-Up-An-Office-Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseSetting-Up-An-Office-Three">
+                                                                Additional Setting Up An Office Services
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseSetting-Up-An-Office-Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingSetting-Up-An-Office-Three"
+                                                            data-bs-parent="#accordionFlushSetting-Up-An-Office">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Committee on House Administration</a><br>
+                                                                <a href="#">Office of Payroll & Benefits</a><br>
+                                                                <a href="#">Office of Employee Advocacy</a><br>
+                                                                <a href="#">Office of House Employment Counsel</a><br>
+                                                                <a href="#">CAO Coach Program</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Hiring Accordion - END -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-Sitemap-Two">
+                        <button class="accordion-button collapsed top-level" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-Sitemap-Two" aria-expanded="false"
+                            aria-controls="flush-collapse-Sitemap-Two">
+                            Developing
+                        </button>
+                    </h2>
+                    <div id="flush-collapse-Sitemap-Two" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-Sitemap-Two" data-bs-parent="#accordionFlush-Sitemap">
+                        <div class="accordion-body">
+
+                            <!-- Developing Accordion - START -->
+
+                            <div class="accordion accordion-flush" id="accordionFlush-Developing">
+
+                                <div style="width:97%; margin-left:auto;">
+
+                                    <div class="accordion-item first-level">
+                                        <h2 class="accordion-header" id="flush-heading-Developing-One">
+                                            <button class="accordion-button collapsed first-level-button" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse-Developing-One" aria-expanded="false"
+                                                aria-controls="flush-collapse-Developing-One">
+                                                Performance Management
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse-Developing-One" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading-Developing-One"
+                                            data-bs-parent="#accordionFlush-Developing">
+
+                                            <div class="accordion-body">
+
+                                                <div class="accordion accordion-flush"
+                                                    id="accordionFlush-Developing-Performance-Management">
+
+                                                    <div style="width:97%; margin-left:auto;">
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-One">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-One"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-One">
+                                                                    Overview
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-One"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-One"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Performance Management Process</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Two">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Two"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Two">
+                                                                    Goal Setting
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Two"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Two"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Quick Tips for Effective Goal Setting
+                                                                    </a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Three">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Three"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Three">
+                                                                    Performance Review Documentation
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Three"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Three"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Employee Self-Evaluation Form Template
+                                                                    </a><br>
+                                                                    <a href="#">Performance Evaluation Form
+                                                                        Templates</a><br>
+                                                                    <a href="#">Performance Evaluation Form Examples
+                                                                    </a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Four">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Four"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Four">
+                                                                    Performance Feedback
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Four"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Four"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Delivering Performance Feedback
+                                                                        Guide</a><br>
+                                                                    <a href="#">Quick Tips for Delivering Performance
+                                                                        Feedback</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Five">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Five"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Five">
+                                                                    Additional Performance Management Services
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Five"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Five"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Office of Employee Advocacy</a><br>
+                                                                    <a href="#">Office of House Employment
+                                                                        Counsel</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Six">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Six"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Six">
+                                                                    House Resume Bank
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Six"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Six"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">House Resume Bank</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Seven">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Seven"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Seven">
+                                                                    Applicant Testing
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Seven"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Seven"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">District Knowledge Questionnaire</a><br>
+                                                                    <a href="#">Quick Tips for Administering a Writing
+                                                                        Test</a><br>
+                                                                    <a href="#">Writing Test Scoring Sheets</a><br>
+                                                                    <a href="#">District Office Issue Writing Test
+                                                                        Template</a><br>
+                                                                    <a href="#">Legislative Issue Writing Test
+                                                                        Template</a><br>
+                                                                    <a href="#">Media Relations Writing Test
+                                                                        Template</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Eight">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Eight"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Eight">
+                                                                    Interview & Reference Checks
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Eight"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Eight"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Quick Tips for Conducting
+                                                                        Interviews</a><br>
+                                                                    <a href="#">Structured Interview Template</a><br>
+                                                                    <a href="#">Structured Interview Example</a><br>
+                                                                    <a href="#">Quick Tips for Verifying Job Applicant
+                                                                        References</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item second-level">
+                                                            <h2 class="accordion-header"
+                                                                id="flush-heading-Developing-Performance-Management-Nine">
+                                                                <button
+                                                                    class="accordion-button collapsed second-level-button"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapse-Developing-Performance-Management-Nine"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapse-Developing-Performance-Management-Nine">
+                                                                    Additional Recruiting & Selecting Services
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapse-Developing-Performance-Management-Nine"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-heading-Developing-Performance-Management-Nine"
+                                                                data-bs-parent="#accordionFlush-Developing-Performance-Management">
+
+                                                                <div class="accordion-body">
+                                                                    <a href="#">Office of Diversity & Inclusion</a><br>
+                                                                    <a href="#">Office of Employee Advocacy</a><br>
+                                                                    <a href="#">Office of General Counsel</a><br>
+                                                                    <a href="#">Office of House Employment
+                                                                        Counsel</a><br>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="accordion-item first-level">
+                                        <h2 class="accordion-header" id="flush-heading-Developing-Two">
+                                            <button class="accordion-button collapsed first-level-button" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse-Developing-Two" aria-expanded="false"
+                                                aria-controls="flush-collapse-Developing-Two">
+                                                Professional Growth
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse-Developing-Two" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading-Developing-Two"
+                                            data-bs-parent="#accordionFlush-Developing">
+
+                                            <div class="accordion-body">
+
+                                                <div class="accordion accordion-flush"
+                                                    id="accordionFlushProfessional-Growth">
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingProfessional-Growth-One">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseProfessional-Growth-One"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseProfessional-Growth-One">
+                                                                Member Office Career Paths
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseProfessional-Growth-One"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingProfessional-Growth-One"
+                                                            data-bs-parent="#accordionFlushProfessional-Growth">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+                                                                <a href="#">House Staff Services and Discounts
+                                                                    Guide</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingProfessional-Growth-Two">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseProfessional-Growth-Two"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseProfessional-Growth-Two">
+                                                                Career Conversations
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseProfessional-Growth-Two"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingProfessional-Growth-Two"
+                                                            data-bs-parent="#accordionFlushProfessional-Growth">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Quick Tips for Conducting Career
+                                                                    Conversations</a><br>
+                                                                <a href="#">Establishing Realistic Career Plans for
+                                                                    Staff: FAQ</a><br>
+                                                                <a href="#">Individual Development Roadmap
+                                                                    Template</a><br>
+                                                                <a href="#">Individual Development Roadmap
+                                                                    Example</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item second-level">
+                                                        <h2 class="accordion-header"
+                                                            id="flush-headingProfessional-Growth-Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#flush-collapseProfessional-Growth-Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="flush-collapseProfessional-Growth-Three">
+                                                                Additional Professional Growth Services
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseProfessional-Growth-Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="flush-headingProfessional-Growth-Three"
+                                                            data-bs-parent="#accordionFlushProfessional-Growth">
+
+                                                            <div class="accordion-body">
+
+                                                                <a href="#">Congressional Staff Academy</a><br>
+                                                                <a href="#">CAO Coach Program</a><br>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Developing Accordion - END -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-Sitemap-Three">
+                        <button class="accordion-button collapsed top-level" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-Sitemap-Three" aria-expanded="false"
+                            aria-controls="flush-collapse-Sitemap-Three">
+                            Retaining
+                        </button>
+                    </h2>
+                    <div id="flush-collapse-Sitemap-Three" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-Sitemap-Three" data-bs-parent="#accordionFlush-Sitemap">
+                        <div class="accordion-body">
+
+                            <P>Retaining - Resources</P>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-Sitemap-Four">
+                        <button class="accordion-button collapsed top-level" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-Sitemap-Four" aria-expanded="false"
+                            aria-controls="flush-collapse-Sitemap-Four">
+                            Staff Benefits
+                        </button>
+                    </h2>
+                    <div id="flush-collapse-Sitemap-Four" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-Sitemap-Four" data-bs-parent="#accordionFlush-Sitemap">
+                        <div class="accordion-body">
+
+                            <P>Staff Benefits - Resources</P>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-Sitemap-Five">
+                        <button class="accordion-button collapsed top-level" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-Sitemap-Five" aria-expanded="false"
+                            aria-controls="flush-collapse-Sitemap-Five">
+                            House Resume Bank
+                        </button>
+                    </h2>
+                    <div id="flush-collapse-Sitemap-Five" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-Sitemap-Five" data-bs-parent="#accordionFlush-Sitemap">
+                        <div class="accordion-body">
+
+                            <P>House Resume Bank - Resources</P>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-Sitemap-Six">
+                        <button class="accordion-button collapsed top-level" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-Sitemap-Six" aria-expanded="false"
+                            aria-controls="flush-collapse-Sitemap-Six">
+                            Intern Resources
+                        </button>
+                    </h2>
+                    <div id="flush-collapse-Sitemap-Six" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-Sitemap-Six" data-bs-parent="#accordionFlush-Sitemap">
+                        <div class="accordion-body">
+
+                            <P>Intern Resources - Resources</P>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JQuery CDN - Imported from "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"-->
+    <script src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/js/jquery.min.js"></script>
+
+
+    <!-- Bootstrap core JS-->
+    <script
+        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+
+    <!-- House HR Hub - Merged JS    -->
+    <script
+        src="https://ushouse.sharepoint.com/sites/HumanResources/CAOHRHUB/SiteAssets/js/House-HR-Hub-Merged.js"></script>
+
+
+
+
+
+</body>
+
+</html>
