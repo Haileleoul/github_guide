@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   var path = window.location.pathname;
 
-  if ((path.includes("TestPage_07") || path.includes("TestPage_08") || path.includes("TestPage_09") || path.includes("TestPage_10") || path.includes("Administrative") || path.includes("Communications") || path.includes("District") || path.includes("Legislative"))) {
+  if ((path.includes("TestPage_07") || path.includes("TestPage_08") || path.includes("TestPage_09") || path.includes("TestPage_10") || path.includes("Administrative") || path.includes("Communications") || path.includes("District") || path.includes("Legislative") || path.includes("TestPage_03"))) {
 
     //Load Position modals function call, for pages House Career Compass track pages
     loadPositionModals();

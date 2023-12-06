@@ -522,6 +522,31 @@
 			shadowPosition: 'inside',
 			shadowFrom: false,
 		}
+	}else if (path.includes("TestPage_03")) {
+
+		$.fn.maphilight.defaults = {
+			fill: false,
+			fillColor: '005b8f',
+			fillOpacity: 0.2,
+			stroke: true,
+			strokeColor: 'F0B323',
+			strokeOpacity: 1,
+			//   strokeWidth: 10,
+			strokeWidth: 3,
+			fade: true,
+			alwaysOn: false,
+			neverOn: false,
+			groupBy: false,
+			wrapClass: true,
+			shadow: false,
+			shadowX: 0,
+			shadowY: 0,
+			shadowRadius: 6,
+			shadowColor: '000000',
+			shadowOpacity: 0.8,
+			shadowPosition: 'inside',
+			shadowFrom: false,
+		}
 	}
 
 
